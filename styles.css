@@ -355,62 +355,6 @@ h3 {
   height: auto;
 }
 
-.product-proof-copy {
-  padding: 34px 36px 38px;
-}
-
-.product-proof-copy > p {
-  max-width: 410px;
-  margin-bottom: 28px;
-  color: var(--ink);
-  font-size: clamp(25px, 3vw, 39px);
-  font-weight: 820;
-  letter-spacing: -0.035em;
-  line-height: 1.04;
-}
-
-.product-flow {
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.product-flow li {
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  column-gap: 14px;
-  align-items: baseline;
-  border-top: 1px solid var(--line);
-  padding: 17px 0;
-}
-
-.product-flow li:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
-.product-flow span {
-  grid-row: span 2;
-  color: var(--blue);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.product-flow strong {
-  color: #151b26;
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.product-flow small {
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.45;
-}
-
 .phone-stage {
   position: relative;
   min-height: 570px;
@@ -469,6 +413,18 @@ h3 {
   z-index: 1;
 }
 
+.phone-commons {
+  right: 30px;
+  bottom: 46px;
+  z-index: 2;
+}
+
+.phone-notes {
+  right: 34px;
+  bottom: 34px;
+  z-index: 2;
+}
+
 .gradepath-section,
 .section,
 .contact-band {
@@ -492,12 +448,10 @@ h3 {
   max-width: 560px;
 }
 
-.gradepath-principles {
+.gradepath-screens {
+  position: relative;
   align-self: stretch;
-  display: flex;
-  min-height: 360px;
-  flex-direction: column;
-  justify-content: flex-end;
+  min-height: 560px;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: var(--radius);
   padding: 34px;
@@ -505,30 +459,16 @@ h3 {
     linear-gradient(145deg, rgba(37, 88, 232, 0.11), transparent 40%),
     linear-gradient(180deg, #fff, #f9fbff);
   box-shadow: var(--shadow-tight);
+  overflow: hidden;
 }
 
-.principles-intro {
-  max-width: 520px;
-  margin: 0;
-  color: #1f2938;
-  font-size: clamp(23px, 2.6vw, 34px);
-  font-weight: 760;
-  letter-spacing: -0.03em;
-  line-height: 1.16;
+.gradepath-screens .phone-large {
+  width: min(47%, 292px);
+  min-width: 224px;
 }
 
-.text-link {
-  width: max-content;
-  margin-top: 28px;
-  border-bottom: 1px solid rgba(37, 88, 232, 0.36);
-  padding-bottom: 4px;
-  color: var(--blue-dark);
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.text-link:hover {
-  border-color: var(--blue);
+.gradepath-screens .phone-small {
+  width: min(35%, 218px);
 }
 
 .mini-grid {
@@ -704,30 +644,20 @@ figcaption {
     #111722;
 }
 
-.product-rail {
-  display: grid;
-  width: 100%;
-  align-content: center;
-  gap: 0;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.04);
-  overflow: hidden;
-}
-
-.product-rail span {
+.work-screen-pair {
   display: flex;
-  min-height: 60px;
+  width: 100%;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
-  padding: 0 20px;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 17px;
-  font-weight: 780;
+  justify-content: center;
+  gap: 22px;
 }
 
-.product-rail span:last-child {
-  border-bottom: 0;
+.work-screen-pair img {
+  width: auto;
+  height: 248px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 22px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
 }
 
 .row-copy {
@@ -959,14 +889,6 @@ footer a {
     min-height: 530px;
   }
 
-  .product-proof-copy {
-    padding: 28px 24px 30px;
-  }
-
-  .product-proof-copy > p {
-    font-size: 30px;
-  }
-
   .row-copy {
     padding: 0;
   }
@@ -1099,13 +1021,13 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .gradepath-principles {
-    min-height: 280px;
+  .gradepath-screens {
+    min-height: 500px;
     padding: 26px;
   }
 
-  .principles-intro {
-    font-size: 26px;
+  .work-screen-pair img {
+    height: 218px;
   }
 
   .project-link {
