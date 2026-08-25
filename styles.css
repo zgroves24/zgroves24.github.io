@@ -696,24 +696,38 @@ figcaption {
 }
 
 .gradepath-media {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  align-items: center;
+  display: flex;
+  align-items: stretch;
   padding: 14px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent),
     #111722;
 }
 
-.gradepath-media .device-frame {
-  justify-self: center;
-  width: min(100%, 194px);
-  max-height: 420px;
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow:
-    0 18px 42px rgba(0, 0, 0, 0.24),
-    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+.product-rail {
+  display: grid;
+  width: 100%;
+  align-content: center;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+
+.product-rail span {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 17px;
+  font-weight: 780;
+}
+
+.product-rail span:last-child {
+  border-bottom: 0;
 }
 
 .row-copy {
