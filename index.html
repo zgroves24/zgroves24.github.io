@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zachary Groves | AI Product Portfolio</title>
+    <title>Zachary Groves | GradePath, Applied AI, and Engineering</title>
     <meta
       name="description"
-      content="Portfolio for Zachary Groves, a Computer Engineering student at Alabama building applied AI products, including GradePath."
+      content="Zachary Groves is a Computer Engineering student at Alabama, founder of GradePath, ISG AI Acceleration intern, and student organization president."
     />
     <link rel="canonical" href="https://zgroves24.github.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zachary Groves | AI Product Portfolio" />
+    <meta property="og:title" content="Zachary Groves | GradePath, Applied AI, and Engineering" />
     <meta
       property="og:description"
-      content="Portfolio for Zachary Groves, focused on applied AI, GradePath, engineering work, and student leadership."
+      content="GradePath, enterprise AI work at ISG, engineering research, and student leadership at Alabama."
     />
     <meta property="og:url" content="https://zgroves24.github.io/" />
     <meta
@@ -23,16 +23,16 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Zachary Groves | AI Product Portfolio" />
+    <meta name="twitter:title" content="Zachary Groves | GradePath, Applied AI, and Engineering" />
     <meta
       name="twitter:description"
-      content="Portfolio for Zachary Groves, focused on applied AI, GradePath, engineering work, and student leadership."
+      content="GradePath, enterprise AI work at ISG, engineering research, and student leadership at Alabama."
     />
     <meta
       name="twitter:image"
       content="https://zgroves24.github.io/assets/social/linkedin-featured-thumbnail.png"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260824-portfolio-refresh-2" />
+    <link rel="stylesheet" href="./styles.css?v=20260824-portfolio-refresh-3" />
   </head>
   <body>
     <header class="site-header" aria-label="Portfolio navigation">
@@ -40,7 +40,7 @@
         <img src="./assets/profile/z-avatar.png" alt="" />
         <span class="brand-text">
           <strong>Zachary Groves</strong>
-          <small>Applied AI and product work</small>
+          <small>Computer Engineering · Applied AI</small>
         </span>
       </a>
       <nav>
@@ -55,10 +55,12 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
+          <span class="eyebrow">Founder · Engineer · Student leader</span>
           <h1>Zachary Groves</h1>
           <p class="intro">
-            Computer Engineering student at Alabama. I build AI products around the information people already have,
-            instead of asking a model to guess.
+            I’m a Computer Engineering student at Alabama and the founder of GradePath, a native iPhone app where
+            students keep class material organized and ask Tutor questions using the sources they choose. I’ve also
+            built enterprise AI workflows at ISG and lead UA AI Club and Alabama Hockey.
           </p>
           <div class="actions" aria-label="Primary links">
             <a class="button primary" href="./Zachary_Groves_AI_Focused_Resume.pdf">View Resume</a>
@@ -67,16 +69,14 @@
           </div>
         </div>
 
-        <aside class="hero-proof product-proof" aria-label="Current GradePath iPhone product screens">
+        <aside class="hero-proof" aria-label="Current GradePath iPhone product screen">
           <div class="proof-title">
             <img src="./assets/gradepath/brand/logo-full.png" alt="GradePath" />
+            <span>Current iPhone build</span>
           </div>
-          <div class="phone-stage product-proof-stage">
-            <figure class="phone phone-large">
-              <img src="./assets/gradepath/current-ios/2026-08-24-course-notes.png" alt="GradePath course page with Capture, Private notes, Tutor, and organized class notes" />
-            </figure>
-            <figure class="phone phone-small phone-commons">
-              <img src="./assets/gradepath/current-ios/2026-08-24-commons.png" alt="GradePath Course Commons with material saved to My Materials" />
+          <div class="hero-device-stage">
+            <figure class="device-shot hero-device">
+              <img src="./assets/gradepath/current-ios/2026-08-24-course-notes.png" alt="GradePath course page with Capture, Private notes, Tutor, and organized class notes" fetchpriority="high" />
             </figure>
           </div>
         </aside>
@@ -85,38 +85,31 @@
       <section id="gradepath" class="gradepath-section">
         <div class="gradepath-layout">
           <div class="gradepath-copy">
+            <span class="section-kicker">Founder and developer</span>
             <h2>GradePath</h2>
             <p>
-              I founded GradePath because a semester is still split across a syllabus, notes, deadlines, and separate AI
-              tools. I am building an iPhone product where students can capture class material, keep it tied to a course,
-              ask Tutor questions using sources they choose, and share useful notes with classmates.
+              GradePath lets students record permitted class material or write notes, organize it by course and section,
+              choose what Tutor can reference, and share useful material through Course Commons.
             </p>
-            <div class="mini-grid" aria-label="GradePath highlights">
-              <div data-index="01">
-                <span>Role</span>
-                <strong>Founder and developer</strong>
-              </div>
-              <div data-index="02">
-                <span>Focus</span>
-                <strong>Private capture and source-grounded help</strong>
-              </div>
-              <div data-index="03">
-                <span>Platform</span>
-                <strong>Native iPhone product</strong>
-              </div>
-              <div data-index="04">
-                <span>Domain</span>
-                <strong>AI education technology</strong>
-              </div>
+            <dl class="product-meta">
+              <div><dt>Platform</dt><dd>Native iPhone app</dd></div>
+              <div><dt>Built with</dt><dd>SwiftUI · Supabase</dd></div>
+              <div><dt>Current focus</dt><dd>Capture · Notes · Tutor · Commons</dd></div>
+            </dl>
+            <div class="actions">
+              <a class="button primary" href="https://www.gradepath.app/">See GradePath</a>
+              <a class="text-link" href="https://github.com/zgroves24/gradepath-case-study">Read the case study</a>
             </div>
-            <a class="button primary" href="https://github.com/zgroves24/gradepath-case-study">View GradePath case study</a>
           </div>
-          <div class="gradepath-screens" aria-label="Current GradePath iPhone screens">
-            <figure class="phone phone-large">
-              <img src="./assets/gradepath/current-ios/2026-08-24-commons.png" alt="GradePath Course Commons showing course-scoped study material" />
-            </figure>
-            <figure class="phone phone-small phone-notes">
-              <img src="./assets/gradepath/current-ios/2026-08-24-course-notes.png" alt="GradePath course notes organized by section" />
+          <div class="product-gallery" aria-label="Current GradePath iPhone screens">
+            <figure class="app-proof">
+              <div class="proof-frame">
+                <img src="./assets/gradepath/current-ios/2026-08-24-commons.png" alt="GradePath Course Commons with class-specific study material" loading="lazy" />
+              </div>
+              <figcaption>
+                <strong>Course Commons</strong>
+                <span>Students can find, preview, and save material for their course.</span>
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -125,48 +118,27 @@
       <section id="work" class="section">
         <div class="section-head">
           <div>
-            <h2>Selected Work</h2>
+            <span class="section-kicker">Beyond GradePath</span>
+            <h2>Experience and leadership</h2>
           </div>
           <p>
-            Product, engineering, and leadership work that has been concrete enough to build, test, or run.
+            Enterprise AI work, completed research, and the organizations I run at Alabama.
           </p>
         </div>
 
         <div class="work-list">
-          <article class="work-row lead-row">
-            <div class="row-media gradepath-media">
-              <div class="work-screen-pair" aria-label="Current GradePath iPhone screens">
-                <img src="./assets/gradepath/current-ios/2026-08-24-course-notes.png" alt="GradePath course notes screen" />
-                <img src="./assets/gradepath/current-ios/2026-08-24-commons.png" alt="GradePath Course Commons screen" />
-              </div>
-            </div>
-            <div class="row-copy">
-              <span class="label">Founder, builder</span>
-              <h3>GradePath</h3>
-              <p>
-                Building the iPhone product across SwiftUI, backend services, AI workflows, testing, and user feedback.
-              </p>
-              <ul class="tag-list">
-                <li>SwiftUI</li>
-                <li>Source-grounded AI</li>
-                <li>Education technology</li>
-              </ul>
-            </div>
-          </article>
-
           <article id="experience" class="work-row">
-            <div class="row-media isg-media">
-              <img class="isg-bg" src="./assets/isg/isg-technology-research.jpg" alt="ISG technology research visual" />
-              <div class="isg-logo-panel">
-                <img src="./assets/isg/isg-logo-trimmed.png" alt="ISG logo" />
-              </div>
+            <div class="row-media isg-media" aria-label="ISG AI Acceleration Intern Program">
+              <img src="./assets/isg/isg-logo-trimmed.png" alt="ISG logo" />
+              <span>AI Acceleration Intern Program</span>
+              <small>Enterprise AI · Summer 2026</small>
             </div>
             <div class="row-copy">
               <span class="label">AI Engineering Intern</span>
               <h3>ISG AI Acceleration Intern Program</h3>
               <p>
-                Built a governed custom-GPT intake and lifecycle workflow in n8n, an advisor-intake system for reusable
-                client and opportunity intelligence, and OpenAI Enterprise guidance for responsible use.
+                Built a governed custom-GPT intake and lifecycle workflow in n8n, an advisor intake system for reusable
+                client and opportunity research, and internal guidance for responsible OpenAI Enterprise use.
               </p>
               <ul class="tag-list">
                 <li>Enterprise AI</li>
@@ -177,18 +149,19 @@
           </article>
 
           <article class="work-row">
-            <div class="row-media research-photo">
-              <img
-                src="./assets/research/vr-digital-twin-generated.png"
-                alt="VR and digital twin research concept image"
-              />
+            <div class="row-media research-diagram" aria-label="Depth camera to gait analysis workflow">
+              <span>Depth camera</span>
+              <b aria-hidden="true">→</b>
+              <span>3D pose</span>
+              <b aria-hidden="true">→</b>
+              <span>Gait analysis</span>
             </div>
             <div class="row-copy">
               <span class="label">Completed research</span>
               <h3>AI-driven gait assessment</h3>
               <p>
-                Completed undergraduate research using depth-camera motion tracking and digital twins to examine gait
-                assessment and rehabilitation-oriented analysis.
+                Completed undergraduate research using depth-camera motion tracking and an Unreal Engine digital twin
+                to study gait assessment for rehabilitation.
               </p>
               <ul class="tag-list">
                 <li>Research</li>
@@ -206,8 +179,8 @@
               <span class="label">Campus leadership</span>
               <h3>UA AI Club</h3>
               <p>
-                President of a 300+ member student organization focused on practical AI literacy, hands-on tool use,
-                and responsible adoption across majors.
+                I lead a 300+ member student organization focused on practical AI education, hands-on tool use, and
+                responsible use across majors.
               </p>
               <ul class="tag-list">
                 <li>Leadership</li>
@@ -225,8 +198,8 @@
               <span class="label">President, player</span>
               <h3>Alabama Hockey</h3>
               <p>
-                Run operations and a $130,000+ annual budget for Alabama ACHA M3 Hockey, including schedules, travel,
-                league communication, and university administration.
+                I run team operations and manage a $130,000 annual budget, including schedules, travel, league
+                communication, and university administration.
               </p>
               <ul class="tag-list">
                 <li>Operations</li>
@@ -241,19 +214,30 @@
       <section class="section projects-section" aria-labelledby="projects-title">
         <div class="section-head">
           <div>
-            <h2 id="projects-title">Other builds</h2>
+            <span class="section-kicker">Public code</span>
+            <h2 id="projects-title">Open-source builds</h2>
           </div>
-          <p>Two projects that show the rest of the range: data work for markets and a practical tool for educators.</p>
+          <p>Smaller projects with public source code.</p>
         </div>
         <div class="project-links">
-          <article class="project-link">
-            <span>Market Analysis</span>
-            <small>Real-time equity research dashboard with volatility, correlation, and event-study views.</small>
-          </article>
-          <article class="project-link">
-            <span>AI Educator's Toolkit</span>
-            <small>Lesson-plan and assessment generator shaped by NSF I-Corps customer discovery.</small>
-          </article>
+          <a class="project-link featured-project" href="https://github.com/zgroves24/agent-operator-skills">
+            <span class="project-type">Open-source toolkit</span>
+            <strong>Agent Operator Skills</strong>
+            <small>Reusable AI-agent skills for planning, verification, security reviews, SEO audits, changelogs, and coding workflows.</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="project-link" href="https://github.com/zgroves24/papertrail">
+            <span class="project-type">Research digest</span>
+            <strong>Papertrail</strong>
+            <small>An arXiv tracker that turns new research papers into readable summaries and daily email digests.</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="project-link" href="https://github.com/zgroves24/briefly">
+            <span class="project-type">Command-line tool</span>
+            <strong>Briefly</strong>
+            <small>A command-line tool that summarizes URLs, files, and piped text with Claude.</small>
+            <i aria-hidden="true">↗</i>
+          </a>
         </div>
       </section>
 
@@ -261,7 +245,7 @@
         <div>
           <h2>Links</h2>
           <p>
-            Resume, GitHub, LinkedIn, and the work itself.
+            Resume, GitHub, and LinkedIn.
           </p>
         </div>
         <div class="contact-actions">
