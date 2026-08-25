@@ -328,12 +328,6 @@ h3 {
   font-weight: 700;
 }
 
-.proof-title span {
-  margin-left: auto;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
 .proof-title img {
   width: 132px;
   height: auto;
@@ -392,40 +386,6 @@ h3 {
   position: sticky;
   top: 116px;
   max-width: 460px;
-}
-
-.product-meta {
-  display: grid;
-  gap: 0;
-  margin: 34px 0 0;
-  border-top: 1px solid var(--line);
-}
-
-.product-meta div {
-  display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 18px;
-  border-bottom: 1px solid var(--line);
-  padding: 15px 0;
-}
-
-.product-meta dt,
-.product-meta dd {
-  margin: 0;
-}
-
-.product-meta dt {
-  color: var(--muted-2);
-  font-size: 12px;
-  font-weight: 760;
-  text-transform: uppercase;
-}
-
-.product-meta dd {
-  color: #202735;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.45;
 }
 
 .text-link {
@@ -917,10 +877,6 @@ footer a {
 
   .proof-title img {
     width: 118px;
-  }
-
-  .proof-title span {
-    font-size: 10px;
   }
 
   .hero-device-stage {
